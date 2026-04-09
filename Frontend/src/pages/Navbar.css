@@ -1,0 +1,179 @@
+
+
+body{
+    margin: 0;
+    
+}
+
+.background {
+     position: relative; 
+     height: 89vh;
+     width: 100%;
+}
+
+.background::before {
+    content: "";    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./img/hot-air-balloons-7855513.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: contrast(1.1); 
+}
+
+.top-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-between;
+    background-color: rgb(18, 32, 76);
+    height: 90px;
+}
+.logo img{
+    max-width: 200%;
+    padding: 10px; 
+
+}
+
+.navbar a {
+    display:inline-flex;
+    margin-top: -15px;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-size:20px;
+    padding: 20px;
+    text-align: right;
+    justify-content: flex-end;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+}
+.line1{
+    font-size: 100px;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500; 
+    position: relative;   
+    top: 25%;
+    text-align: center;    
+}
+
+.line2{
+    font-size: 30px;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300; 
+    position: relative;   
+    top: 25%;
+    text-align: center;  
+
+}
+
+.button-container {
+    
+    text-align: center;
+    margin-top: 15%;
+    width: 20%;
+    margin-left: 550px;
+
+}
+
+button{
+background-color: rgb(255, 255, 255);
+cursor: pointer;
+padding: 10px 20px;
+margin-top: 10px;
+border: none;
+border-radius: 10px;
+position: relative;
+top: 25%;
+color: rgb(0, 114, 61);
+font-size:x-large;
+
+
+
+}
+button a{
+    text-decoration: none;
+}
+.footer {
+/* margin-top: 50px; */
+background-color: rgb(18, 32, 76);
+padding: 20px 0;
+}
+
+.footer-content {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.footlinks h4 {
+font-size: 33px;
+font-weight: 600;
+color: white;
+margin-bottom: 30px;
+position: relative;
+margin-top: 15px;
+}
+
+.footlinks h4::before {
+content: "";
+position: absolute;
+height: 2px;
+width: 70px;
+background: white;
+bottom: -7px;
+left: 0;
+}
+
+.footlinks ul li {
+margin-bottom: 15px;
+}
+
+.footlinks ul li a {
+font-size: 22px;
+color: #dddddd;
+text-decoration: none;
+transition: 0.3s ease;
+}
+
+.footlinks ul li a:hover {
+transform: translateX(6px);
+color: white;
+}
+
+.social a {
+font-size: 40px;
+margin: 9px;
+color: white;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+transition: 0.3s ease;
+text-decoration: none;
+}
+
+.social a:hover {
+transform: scale(1.2);
+}
+
+.end {
+text-align: center;
+padding: 12px 0;
+color: white;
+font-size: 15px;
+letter-spacing: 1px;
+font-weight: 300;
+}
+hr{
+margin: 0;
+
+}
+
+
+
+
+

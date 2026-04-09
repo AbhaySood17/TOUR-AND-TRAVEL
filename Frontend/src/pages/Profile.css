@@ -1,0 +1,157 @@
+.profile-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.profile-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease;
+  border: 3px solid #007bff;
+}
+
+.profile-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-header h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 0;
+}
+
+.profile-icon {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 0;
+}
+
+.profile-content {
+  padding: 1rem;
+}
+
+.profile-info {
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.info-group {
+  margin-bottom: 1.5rem;
+}
+
+.info-group label {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.info-group p {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0;
+  padding: 0.5rem;
+  background: #f8f9fa;
+  border-radius: 5px;
+}
+
+.profile-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.edit-button, .save-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.save-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.save-button:hover {
+  background-color: #218838;
+}
+
+.error-message {
+  color: #dc3545;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #f8d7da;
+  border-radius: 5px;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  background: white;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+@media (max-width: 768px) {
+  .profile-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .profile-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  
+  .profile-header h2 {
+    font-size: 2rem;
+  }
+} 
