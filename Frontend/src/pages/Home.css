@@ -1,0 +1,598 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    z-index: 1;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+
+header {
+    position: relative;
+    background-image: url('./img/luca-bravo-O453M2Liufs-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: 10;
+    opacity: 1;
+    
+    
+}
+
+
+
+header .container {
+    z-index: 2;
+}
+
+header h1 {
+    font-size: 4.5rem;
+    margin-bottom: 10px;
+    z-index: 20;
+    color: black;
+}
+
+header p {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    color: white;
+    z-index: 1;
+}
+
+.card{
+   height: 80%;
+   width: 24%;
+   background-color: beige;
+   border-radius: 20px;
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   overflow: hidden;
+   transition: all ease 0.6s;
+ 
+ }
+
+#destinations {
+    padding: 50px 0;
+    background: rgb(255, 255, 255);
+    width: 100%; 
+    background-color: rgba(128, 128, 128, 0.216);
+    
+}
+
+#destinations .container {
+    width: 90%; 
+}
+
+#destinations h1 {
+    text-align: center;
+    margin-bottom: 60px;
+    
+    color: black;
+}
+
+.destination-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Reduced gap for more compact layout */
+    justify-content: center; /* Centers cards instead of spreading them */
+}
+
+.destination-card {
+    width: 300px; /* Fixed width for consistency */
+    height: 400px;
+    background: white;
+    color: black;
+    text-align: center;
+    border: 2px solid black;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.destination-card img {
+    max-width: 100%;
+    height: 88.5%;
+    margin-bottom: 10px;
+}
+
+.destination-card h3 {
+    margin-bottom: 6px;
+}
+
+
+.destination-card:hover {
+    transform: translateY(-15px);
+}
+
+#services {
+
+    padding: 20px;
+}
+
+#services .container h2{
+    font-size: 38px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.service-card {
+    background: rgb(216, 130, 10);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    color: white;
+    flex: 1;
+    transition: transform 0.3s ease;
+}
+
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+
+}
+
+#watch{
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.footer1 footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+button{
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    top: 25%;
+    font-size:larger;
+        
+        
+
+}
+button a{
+    text-decoration: none;
+            color: black;
+        }
+
+.line1 {
+    border: 1px solid white;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.line2 {
+    border: 1px solid white;
+    width: 100%;
+    margin-top: -50px; 
+}
+.line3{
+    border: 1px solid white;
+    width: 100%;
+    margin-top: -30px;
+
+}
+
+
+
+
+.activity-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.activity-card {
+    background: white;
+    color: black;
+    text-align: center;
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%; 
+    border: 2px solid black;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    
+}
+
+.activity-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.activity-card-container h3 {
+    margin: 10px 0; 
+    font-size: 33px; 
+    color: rgb(12, 0, 0); 
+}
+
+.activity-card:hover {
+    transform: translateY(-10px);
+}
+
+.show-more {
+    display: flex;
+    justify-content: center; 
+    margin: 20px 0; 
+}
+
+
+.show-more button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: small;
+    transition: background-color 0.3s ease; 
+}
+
+.show-more button:hover {
+    background-color: rgb(50, 50, 50); 
+}
+
+
+#destinations .container h1{
+    font-size: 38px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.one{
+    float: left;
+    }
+
+.two{
+    float: right;
+}
+
+.third{
+    text-align: center;
+}
+
+hr{
+    margin:0;
+}
+
+.overlay{
+   height: 100%;
+   width: 100%;
+   background-color: rgb(216, 130, 10);
+   padding: 30px;
+   padding-top: 150px;
+   transition: all ease 0.6s;
+  opacity: 0;
+ }
+ .overlay h4{
+   color:black;
+   font-size: 40px;
+   font-weight: 800;
+   white-space: nowrap;
+   margin-bottom: 20px;
+ }
+ .overlay p{
+   color: black;
+   font-size: 18px;
+ }
+ 
+ .card:hover .overlay{
+     opacity: 1;
+ }
+ .card:hover{
+   transform: rotate3d(-0.6,2,0.2,20deg);
+ }
+
+ h4{
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+ }
+ h1,h2,h3{
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+ p{
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+ }
+ 
+ #card1{
+    background-image: url(./img/piramids.jpg); 
+ }
+ #card2{
+    background-image: url(https://romesite.com/images/rome-italy.jpg); 
+ }
+ #card3{
+    background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/90/45/f3/a-noruega-fica-no-norte.jpg?w=900&h=-1&s=1); 
+ }
+ #card4{
+    background-image: url(https://media.istockphoto.com/id/1345426734/photo/eiffel-tower-paris-river-seine-sunset-twilight-france.jpg?s=612x612&w=0&k=20&c=I5rAH5d_-Yyag8F0CKzk9vzMr_1rgkAASGTE11YMh9A=); 
+ }
+ #card5{
+    background-image: url(https://www.explore.co.uk/medialibraries/explore/blog-images/2020%2007%20july/shutterstock_161210453.jpg?ext=.jpg&width=620&format=webp&quality=80&v=202007201143); 
+ }
+ #card6{
+    background-image: url(https://entiretravel.imgix.net/getmedia/445868c2-c9d7-4b05-8fa1-f85760f35c1a/ETG-Destination-Venice-842x469.jpg?auto=format); 
+ }
+ #card7{
+    background-image: url(https://cdn.pixabay.com/photo/2022/06/13/21/06/taj-mahal-7260693_640.jpg); 
+ }
+ #card8{
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/735/451/683/dubai-city-night-amazing-facilities-burj-khalifa-hd-wallpaper-wallpaper-preview.jpg); 
+ }
+ #card9{
+    background-image: url(https://media.architecturaldigest.com/photos/56ccf28a6f58f35922d58592/1:1/w_640%2Cc_limit/milan-day-trips-05-edit.jpg); 
+ }
+
+ .footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-around;
+    overflow: auto;
+    background-color: rgb(11, 0, 0); 
+    color: rgb(163, 163, 163);
+    padding: 20px; 
+
+    }
+
+    #clock{
+        font-size: larger;
+        font-weight: bolder;
+        color: #fff;
+        position: absolute;
+         top: 25px;
+        right: 0;
+        padding: 10px; 
+    }
+    #banner{
+        font-size: larger;
+        font-weight: bolder;
+        color: #fff;
+        position: absolute;
+         top: 0;
+        right: 0;
+        padding: 10px; 
+       
+    }
+
+
+@media screen and (max-width: 768px) {
+
+
+header p {
+    font-size: 1.5rem;
+}
+
+h1{
+    font-size: 10rem;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.destination-grid {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.destination-card {
+    width: 100%;
+    height: auto;
+}
+
+.service-grid {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service-card {
+    width: 100%;
+}
+
+.activity-card-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.activity-card {
+    width: 80%;
+    height: auto;
+}
+
+.show-more button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+}
+
+.footer {
+    flex-direction: column;
+    text-align: center;
+}
+
+.one, .two, .third {
+    width: 100%;
+    margin-bottom: 20px;
+}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+
+
+header p {
+    font-size: 1.8rem;
+}
+
+.destination-grid {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.destination-card {
+    width: 100%;
+    height: auto;
+}
+
+.service-grid {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.service-card {
+    width: 100%;
+}
+
+.activity-card-container {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.activity-card {
+    width: 70%;
+    height: auto;
+}
+
+.show-more button {
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+.footer {
+    flex-direction: column;
+    text-align: center;
+}
+
+.one, .two, .third {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+}
+
+#logout{
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px; 
+}
+.our_services{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    color: white;
+    flex: 1;
+    transition: transform 0.3s ease;
+    margin: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Featured Images Hover Effects */
+.featured-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.featured-image-container:hover {
+    transform: translateY(-10px);
+}
+
+.featured-image-container img {
+    transition: transform 0.5s ease;
+}
+
+.featured-image-container:hover img {
+    transform: scale(1.1);
+}
+
+.featured-image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    color: white;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.featured-image-container:hover .featured-image-overlay {
+    transform: translateY(0);
+}
